@@ -1,5 +1,4 @@
 #!/bin/bash
-set -ex
 
 if [ ! -e $fdu_fabric_location ]; then
   echo "Please provide the location of Fabric"
