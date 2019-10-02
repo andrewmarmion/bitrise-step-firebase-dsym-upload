@@ -33,10 +33,10 @@ project_type_tags:
   - ios
 #   - macos
 #   - android
-#   - xamarin
-#   - react-native
-#   - cordova
-#   - ionic
+  - xamarin
+  - react-native
+  - cordova
+  - ionic
 
 # Type tags are used for categorizing steps, for easier step discovery in Step Libraries.
 # You can find more information about type tags in the Step Development Guideline:
@@ -60,6 +60,8 @@ inputs:
     opts:
       title: "Location of Fabric"
       description: |
+        This is the location of where Fabric is stored. Usually it is ./Pods/Fabric/upload-symbols
+      summary: 
         This is the location of where Fabric is stored.
       is_expand: true
       is_required: true
@@ -67,13 +69,17 @@ inputs:
     opts:
       title: "Location of your GoogleService-Info.plist"
       description: | 
-        The locations is usually in the form ./YOUR-APP-NAME/GoogleService-Info.plist
+        The location is usually in the form ./YOUR-APP-NAME/GoogleService-Info.plist
+      summary: 
+        This is the location of your GoogleService-Info.plist
       is_expand: true
       is_required: true
   - fdu_dsym_location: "$BITRISE_DSYM_PATH"
     opts: 
         title: "Location of the bitrise dSYMs"
         description: |
-          This is the location of your dSYMs
+          This is the location of your dSYMs. Usually it is $BITRISE_DSYM_PATH
+        summary:
+          This is the location of your dSYMs that you want to upload to Firebase.
         is_expand: true
         is_required: true
