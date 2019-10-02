@@ -59,9 +59,8 @@ inputs:
   - fdu_fabric_location: "./Pods/Fabric/upload-symbols"
     opts:
       title: "Location of Fabric"
-      summary: Summary. No more than 2-3 sentences.
       description: |
-        This is the location of where Fabric is stored. 
+        This is the location of where Fabric is stored.
       is_expand: true
       is_required: true
   - fdu_google_services_location: 
@@ -75,6 +74,6 @@ inputs:
     opts: 
         title: "Location of the bitrise dSYMs"
         description: |
-          This is the locaiton of your dSYMs
+          This is the location of your dSYMs
         is_expand: true
         is_required: true
