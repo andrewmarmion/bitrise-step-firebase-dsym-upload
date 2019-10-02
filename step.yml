@@ -78,7 +78,7 @@ inputs:
     opts: 
         title: "Location of the bitrise dSYMs"
         description: |
-          This is the location of your dSYMs. Usually it is $BITRISE_DSYM_PATH
+          This is the location of your dSYMs. Usually it is $BITRISE\_DSYM\_PATH
         summary:
           This is the location of your dSYMs that you want to upload to Firebase.
         is_expand: true
