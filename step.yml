@@ -8,7 +8,7 @@
 # - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
 
 title: |-
-  Firebase-DSYM-Upload
+  Firebase dSYM Upload
 summary: |
   This step uploads the dsym for your iOS project to Firebase
 description: |
