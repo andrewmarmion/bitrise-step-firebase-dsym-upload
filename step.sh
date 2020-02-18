@@ -10,7 +10,7 @@ if [ ! -e "$fdu_google_services_location" ]; then
   exit 1
 fi
 
-if [ ! -e $fdu_dsym_location ]; then
+if [ ! -e "$fdu_dsym_location" ]; then
   echo "Please provide the location of your dSYM"
   exit 1
 fi
