@@ -83,3 +83,13 @@ inputs:
           This is the location of your dSYMs that you want to upload to Firebase.
         is_expand: true
         is_required: true
+  - fdu_logging: "no"
+    opts:
+        category: Debug
+        title: Show additional logging
+        summary:  Shows additional logging output
+        description: |-
+          Prints the location of the Fabric, the GoogleService-Info.plist and the location of the dSYMs on the server.
+        value_options:
+        - "yes"
+        - "no"
