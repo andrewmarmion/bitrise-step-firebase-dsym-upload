@@ -56,13 +56,13 @@ toolkit:
     entry_file: step.sh
 
 inputs:
-  - fdu_fabric_location: "./Pods/Fabric/upload-symbols"
+  - fdu_fabric_location: "./Pods/FirebaseCrashlytics/upload-symbols"
     opts:
-      title: "Location of Fabric"
+      title: "Location of FirebaseCrashlytics uploader tool"
       description: |
-        This is the location of where Fabric is stored. Usually it is ./Pods/Fabric/upload-symbols
+        This is the location of where Firebase Crashlytis is stored. Usually it is ./Pods/FirebaseCrashlytics/upload-symbols
       summary: 
-        This is the location of where Fabric is stored.
+        This is the location of where Firebase Crashlytis is stored.
       is_expand: true
       is_required: true
   - fdu_google_services_location: 
