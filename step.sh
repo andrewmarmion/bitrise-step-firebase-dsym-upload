@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [ ! -e "$fdu_fabric_location" ]; then
-  echo "Please provide the location of Fabric"
+  echo "Please provide the location of Fabric or FirebaseCrashlytics"
   exit 1
 fi
 
 if [ "$fdu_logging" = "yes" ]; then
-  echo "Location of Fabric is: $fdu_fabric_location"
+  echo "Location of Fabric or FirebaseCrashlytics is: $fdu_fabric_location"
 fi
 
 if [ ! -e "$fdu_google_services_location" ]; then
