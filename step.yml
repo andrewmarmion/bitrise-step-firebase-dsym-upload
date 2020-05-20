@@ -57,7 +57,7 @@ toolkit:
     entry_file: step.sh
 
 inputs:
-  - fdu_fabric_location:
+  - fdu_fabric_location: "./Pods/Fabric/upload-symbols"
     opts:
       title: "Location of Fabric or FirebaseCrashlytics"
       description: |
