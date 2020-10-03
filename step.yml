@@ -57,14 +57,14 @@ toolkit:
     entry_file: step.sh
 
 inputs:
-  - fdu_fabric_location: "./Pods/Fabric/upload-symbols"
+  - fdu_fabric_location: "./Pods/FirebaseCrashlytics/upload-symbols"
     opts:
       title: "Location of Fabric or FirebaseCrashlytics"
       description: |
-        For Fabric it is usually `./Pods/Fabric/upload-symbols`
-        and FirebaseCrashlytics it is usually `./Pods/FirebaseCrashlytics/upload-symbols`
+        FirebaseCrashlytics it is usually `./Pods/FirebaseCrashlytics/upload-symbols`
+        and for Fabric it is usually `./Pods/Fabric/upload-symbols`
       summary: 
-        This is the location of where Fabric or FirebaseCrashlytics is stored.
+        This is the location of where FirebaseCrashlytics or Fabric is stored.
       is_expand: true
       is_required: true
   - fdu_google_services_location: 
@@ -91,7 +91,7 @@ inputs:
         title: Show additional logging
         summary:  Shows additional logging output
         description: |-
-          Prints the location of the Fabric or FirebaseCrashlytics, the GoogleService-Info.plist and the location of the dSYMs on the server.
+          Prints the location of the FirebaseCrashlytics or Fabric, the GoogleService-Info.plist and the location of the dSYMs on the server.
         value_options:
         - "yes"
         - "no"
