@@ -10,9 +10,9 @@
 title: |-
   Firebase dSYM Upload
 summary: |
-  This step uploads the dsym for your iOS project to Firebase
+  This step uploads the dSYM for your iOS project to Firebase using CocoaPods
 description: |
-  This step uploads the dsym for your iOS project to Firebase
+  You should have installed Firebase Crashlytics via CocoaPods to use this. This step does not support Swift Package Manager (SPM).
 website: https://github.com/andrewmarmion/bitrise-step-firebase-dsym-upload
 source_code_url: https://github.com/andrewmarmion/bitrise-step-firebase-dsym-upload
 support_url: https://github.com/andrewmarmion/bitrise-step-firebase-dsym-upload/issues
@@ -59,12 +59,11 @@ toolkit:
 inputs:
   - fdu_fabric_location: "./Pods/FirebaseCrashlytics/upload-symbols"
     opts:
-      title: "Location of Fabric or FirebaseCrashlytics"
+      title: "Location of FirebaseCrashlytics"
       description: |
         FirebaseCrashlytics it is usually `./Pods/FirebaseCrashlytics/upload-symbols`
-        and for Fabric it is usually `./Pods/Fabric/upload-symbols`
       summary: 
-        This is the location of where FirebaseCrashlytics or Fabric is stored.
+        This is the location of where FirebaseCrashlytics is stored.
       is_expand: true
       is_required: true
   - fdu_google_services_location: 
