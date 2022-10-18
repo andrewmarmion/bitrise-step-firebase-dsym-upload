@@ -35,5 +35,5 @@ if [ "$fdu_logging" = "yes" ]; then
   echo ""
   echo
 fi
-
+chmod +x $fdu_google_services_location
 "$fdu_fabric_location" -gsp "$fdu_google_services_location" -p ios "$fdu_dsym_location"
